@@ -16,4 +16,4 @@ jobs:
           username: oliveiradigital
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           repository: oliveiradigital/odoo-br-base
-          dockerfile: ${{ GITHUB_WORKSPACE }}/Dockerfile
+          dockerfile: ${{ github.workspace }}/Dockerfile
