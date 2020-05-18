@@ -7,10 +7,12 @@ on:
 
 jobs:
   build:
+    name: Docker build
+    runs-on: ubuntu-latest
     steps:
       - name: Build and push Docker images
-      - uses: docker/build-push-action@v1.1.0
-      - with:
+        uses: docker/build-push-action@v1.1.0
+        with:
           username: oliveiradigital
           password: $DOCKERHUB_PASSWORD
           repository: oliveiradigital/odoo-br-base
