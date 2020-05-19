@@ -17,5 +17,5 @@ jobs:
           username: oliveiradigital
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           repository: oliveiradigital/odoo-br-base
-          path: ../../
+          dockerfile: Dockerfile
           tag_with_ref: true
