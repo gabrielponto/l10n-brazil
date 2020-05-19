@@ -9,4 +9,7 @@ RUN mkdir /addons-br
 USER odoo
 COPY . /addons-br
 
+USER root
 RUN cd /addons-br && pip install -r requirements.txt
+
+USER odoo
