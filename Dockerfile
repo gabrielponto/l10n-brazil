@@ -4,7 +4,7 @@ LABEL maintainer "Gabriel Oliveira <admin@oliveiradigital.com.br>"
 
 USER root
 
-RUN apt-get update && apt-get install git -y
+RUN apt-get update && apt-get install git python2-setuptools python2-pip -y
 
 RUN mkdir /addons-br
 
