@@ -19,7 +19,6 @@ RUN cd /addons-br && pip install -r requirements.txt
 RUN sed -i -e 's/# pt_BR.UTF-8 UTF-8/pt_BR.UTF-8 UTF-8/' /etc/locale.gen && \
     locale-gen && \
     update-locale
-RUN locale -a
 
 RUN apt-get remove git locales -y && apt-get clean
 
