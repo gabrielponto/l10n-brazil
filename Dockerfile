@@ -17,4 +17,10 @@ RUN cd /addons-br && pip install -r requirements.txt
 
 RUN apt-get remove git -y
 
+# Install pt-br locale
+RUN locale-gen pt_BR
+RUN locale-gen pt_BR.UTF-8
+
+RUN update-locale
+
 USER odoo
