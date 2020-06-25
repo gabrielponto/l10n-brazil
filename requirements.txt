@@ -1,2 +1,11 @@
 suds
 num2words
+reportlab
+unidecode
+signxml
+qrcode
+py3o.template
+sh
+https://github.com/odoo-brazil/geraldo/archive/master.zip
+https://github.com/odoo-brazil/pybrasil/archive/master.zip
+https://github.com/odoo-brazil/PySPED/archive/8.0.zip
